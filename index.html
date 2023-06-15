@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Сервис комментариев со спам фильтром</h1>
-    <h2>Оставьте ваш комментарий</h2>
+    <div class="container">
+      <h1>Сервис комментариев со спам фильтром</h1>
+      <div class="left">
+        <h2>Оставьте ваш комментарий</h2>
+        <div class="field">
+          <label for="username">Введите ваше <b>Имя</b></label
+          ><br />
+          <input type="text" id="username" required />
+        </div>
+        <div class="field">
+          <label for="link">Введите ссылку <b>Вашего аватара</b></label
+          ><br />
+          <input type="url" id="avatar" />
+        </div>
+        <div class="field">
+          <label for="comment">Оставьте комментарий</label><br />
+          <textarea
+            cols="20"
+            rows="10"
+            type="text"
+            name="comment"
+            id="comment"
+          ></textarea>
+        </div>
+        <div>
+          <button class="button" type="submit" id="button">Отправить</button>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Чат</h2>
+        <div class="chat"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
