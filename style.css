@@ -10,8 +10,13 @@ h2 {
   color: rgb(63, 125, 238);
 }
 input,
-textarea {
+textarea,
+fieldset {
   border: rgb(63, 125, 238) 2px dashed;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
 }
 .container {
   display: grid;
@@ -39,4 +44,8 @@ textarea {
 }
 .right {
   padding-left: 2%;
+}
+.message {
+  display: grid;
+  grid-template-columns: 15% 2fr 1fr;
 }

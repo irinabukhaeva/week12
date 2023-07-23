@@ -17,9 +17,20 @@
   <body>
     <div class="container">
       <h1>Сервис комментариев со спам фильтром</h1>
+
       <div class="left">
         <h2>Оставьте ваш комментарий</h2>
         <div class="field">
+          <fieldset>
+            <label for="showName"
+              ><input id="showName" type="radio" name="visibility" /> Показать
+              ваше имя</label
+            >
+            <label for="hideName"
+              ><input id="hideName" type="radio" name="visibility" /> Скрыть
+              ваше имя</label
+            >
+          </fieldset>
           <label for="username">Введите ваше <b>Имя</b></label
           ><br />
           <input type="text" id="username" required />
